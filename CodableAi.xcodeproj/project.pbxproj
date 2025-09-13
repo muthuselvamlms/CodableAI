@@ -23,17 +23,18 @@
 /* Begin PBXFileReference section */
 		16B6885A2E690BF9004F8261 /* CodableAi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableAi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B688652E690BF9004F8261 /* CodableAiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableAiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B689412E69247A004F8261 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		16B6885C2E690BF9004F8261 /* CodableAi */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CodableAi;
-			sourceTree = "<group>";
-		};
 		16B688692E690BF9004F8261 /* CodableAiTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CodableAiTests;
+			sourceTree = "<group>";
+		};
+		16B689372E69241E004F8261 /* CodableAi */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CodableAi;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -60,7 +61,8 @@
 		16B688502E690BF9004F8261 = {
 			isa = PBXGroup;
 			children = (
-				16B6885C2E690BF9004F8261 /* CodableAi */,
+				16B689412E69247A004F8261 /* Package.swift */,
+				16B689372E69241E004F8261 /* CodableAi */,
 				16B688692E690BF9004F8261 /* CodableAiTests */,
 				16B6885B2E690BF9004F8261 /* Products */,
 			);
@@ -102,7 +104,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				16B6885C2E690BF9004F8261 /* CodableAi */,
+				16B689372E69241E004F8261 /* CodableAi */,
 			);
 			name = CodableAi;
 			packageProductDependencies = (
@@ -146,6 +148,7 @@
 				TargetAttributes = {
 					16B688592E690BF9004F8261 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 					16B688642E690BF9004F8261 = {
 						CreatedOnToolsVersion = 16.4;
@@ -340,8 +343,10 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -370,6 +375,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.5;
@@ -381,8 +387,10 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
